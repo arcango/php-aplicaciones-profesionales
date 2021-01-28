@@ -120,6 +120,10 @@
                 "templating",
                 "views"
             ],
+            "support": {
+                "issues": "https://github.com/thephpleague/plates/issues",
+                "source": "https://github.com/thephpleague/plates/tree/v3.4.0"
+            },
             "time": "2020-12-25T05:00:37+00:00"
         },
         {

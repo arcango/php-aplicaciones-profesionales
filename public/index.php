@@ -10,6 +10,7 @@
 
 <body>
   <h1>Spaghetti PHP!!!</h1>
+  <a href="pagina2.php">pagina2</a><br>
 
 
   <?php
@@ -19,6 +20,9 @@
   use Carbon\Carbon;
   use Lib\Breadcrumbs as Brcrumb;
   use Lib\Dates;
+  use League\Plates\Engine;
+
+  $templates = new Engine('../views');
 
   $date = Carbon::now();
   echo $date->format('Y');
@@ -75,6 +79,8 @@
     <?= Dates::longDate(Dates::tomorrow()); ?>
     lo vamos a solucionar
   </p>
+  <?php echo $templates->render('template-test', [
+    'subtitle' => 'Bienvenidos a escuela IT']); ?>
 </body>
 
 </html>
