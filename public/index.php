@@ -3,9 +3,14 @@
 
   require '../vendor/autoload.php';
 
+  use Dotenv\Dotenv;
   use League\Plates\Engine;
 
+  $dotenv = Dotenv::createImmutable('../');
+  $dotenv->load();
+
   var_dump($_ENV);
+
   $templates = new Engine('../views');
 
   $router = new AltoRouter();
