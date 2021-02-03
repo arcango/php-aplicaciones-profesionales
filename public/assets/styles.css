@@ -16,6 +16,10 @@ header img {
   width: 150px;
 }
 
+main {
+  padding: 0 1rem;
+}
+
 footer {
   color: #fff;
   background-color: #303030;
@@ -31,4 +35,20 @@ h1 {
   font-size: 1.5rem;
   font-weight: 300;
   margin-top: 0.3rem;
+}
+
+.manual {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  margin-bottom: 1.5rem;
+}
+
+.errors, .success {
+  background-color: #fcc;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
 }
